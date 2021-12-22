@@ -100,7 +100,6 @@
     </ul>
   </nav>
   <!-- /.navbar -->
-
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
@@ -135,20 +134,20 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="./index.html" class="nav-link active">
+                <a href="#" id="clothes" class="nav-link">
                   <i class="fas fa-arrow-circle-right"></i>
                   <p>Quần áo</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                <a href="#" id="dress" class="nav-link">
+                  <i class="fas fa-arrow-circle-right"></i>
                   <p>Váy</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                <a href="#" id="shoes" class="nav-link">
+                  <i class="fas fa-arrow-circle-right"></i>
                   <p>Giày dép</p>
                 </a>
               </li>
@@ -160,8 +159,8 @@
     </div>
     <!-- /.sidebar -->
   </aside>
-
-  <!-- Content Wrapper. Contains page content -->
+  <!--
+  -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <div class="content-header">
@@ -173,7 +172,8 @@
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Category</li>
+              <li class="breadcrumb-item ">Category</li>
+              <li id="link" class="breadcrumb-item "></li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -181,7 +181,35 @@
     </div><!-- /.content-header -->
     <!-- Main content -->
     <section class="content">
-      Data here
+      <table class="table table-stripes">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Size</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+            <td><input type="button" value="Delete" class="delete"></td>
+          </tr>
+          <tr>
+            <td>Mary</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+            <td><input type="button" value="Delete" class="delete"></td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+            <td><input type="button" value="Delete" class="delete"></td>
+          </tr>
+        </tbody>
+      </table>
     </section>
   </div>
   <!-- /.content-wrapper -->
@@ -202,7 +230,7 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<script src="plugins/jquery/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
@@ -233,5 +261,7 @@
 <script src="dist/js/adminlte.js"></script>
 
 <script src="dist/js/pages/dashboard.js"></script>
+<!--common.js-->
+<script src="common.js"></script>
 </body>
 </html>
